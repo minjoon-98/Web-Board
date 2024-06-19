@@ -2,6 +2,7 @@ package com.example.board.Answer;
 
 
 import com.example.board.Question.Question;
+import com.example.board.user.SiteUser;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -28,4 +29,7 @@ public class Answer {
 
     @ManyToOne
     private Question question;
+
+    @ManyToOne
+    private SiteUser author;
 }
